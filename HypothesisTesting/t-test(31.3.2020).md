@@ -219,7 +219,7 @@ sd = sqrt((d1 - (d2**2 / n)) / (n - 1))
 # Getting started with basics of Python codes :
 ## 4. Deep dive into data:-<a id=section4></a>
 
-- [Link for the Jupyter notebook](https://github.com/jmps967/Core_Stats/blob/master/Hypothesis%20Testing/T-Test/T-Test-JT_GitHub.ipynb)
+- [Link for the Jupyter notebook](https://github.com/jmps967/Statistics/blob/master/HypothesisTesting/T-Test-JT-Draft3_(10.04.2020)_GitHub.ipynb)
 
 ## Some Reference Links:
 - https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)
