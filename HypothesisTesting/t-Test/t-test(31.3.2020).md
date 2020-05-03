@@ -1,7 +1,7 @@
 # Hypothesis Testing "t-Test" in Python using Online Shopping data
 ![image.png](https://github.com/jmps967/Core_Stats/blob/master/images/e-commerce-representational.jpg)
 
-> ##### This project will assure you have good amount of commond on the subjects covered in this session. Good luck!
+> ##### This project will assure you have good amount of command on the subjects covered in this session. Good luck!
 
 ## Table of Contents
 1. [Introduction to Hypothesis Testing](#section1)<br>
@@ -16,7 +16,7 @@
      - 3.2. [Problem statement](#section302)<br>
 4. [Deep dive into data](#section4)
      - 4.1. [Loading Data](#section401)<br>
-     - 4.2. [Spliting data in two groups](#section402)<br>
+     - 4.2. [Splitting data in two groups](#section402)<br>
           - 4.2.1. [Control Group](#section40201)<br>
           - 4.2.2. [Treatment Group](#section40202)<br>
           - 4.2.3. [Observation](#section40203)<br>
@@ -98,7 +98,7 @@ When the given statistics hypothesis assumes a less than or greater than value, 
 
 - The test works by checking the means from two samples to see if they are significantly different from each other. It does this by calculating the standard error in the difference between means, which can be interpreted to see how likely the difference is, if the two samples have the same mean (the null hypothesis)
 
-- The t statistic calculated by the test can be interpreted by comparing it to critical values from the t-distribution. The critical value can be calculated using the degrees of freedo and a significance level with the percent point function (PPF).
+- The t statistic calculated by the test can be interpreted by comparing it to critical values from the t-distribution. The critical value can be calculated using the degrees of freedom and a significance level with the percent point function (PPF).
 
 - We can interpret the statistic value in a two-tailed test, meaning that if we reject the null hypothesis, it could be because the first mean is smaller or greater than the second mean. To do this, we can calculate the absolute value of the test statistic and compare it to the positive (right tailed) critical value, as follows:
 	
@@ -177,7 +177,7 @@ Also X1 and X2 are the 1st and 2nd data samples.
 ****The standard error of the difference is calculated as follows:****
 
 sed = sd/sqrt(n)
-Here "sd" is the Standard deviation of the difference between the dependent sample menas and "n" is the total no.of paired observations.
+Here "sd" is the Standard deviation of the difference between the dependent sample means and "n" is the total no.of paired observations.
 
 #### Calculation of sd:-
 
@@ -185,9 +185,9 @@ Here "sd" is the Standard deviation of the difference between the dependent samp
 
 1st requires the calculation of the sum of the squared differences between the samples:
 d1 = sum (X1[i] - X2[i])^2 for i in n
-Also requires the sum of the (non squared) difference betwwen the samples:
+Also requires the sum of the (non squared) difference between the samples:
 d2 = sum (X1[i] - X2[i]) for i in n
-Now we can calcuate sd as:
+Now we can calculate sd as:
 sd = sqrt((d1 - (d2**2 / n)) / (n - 1))
 
 # Let's jump into case study 
@@ -203,16 +203,16 @@ sd = sqrt((d1 - (d2**2 / n)) / (n - 1))
 ![image.png](https://github.com/jmps967/Core_Stats/blob/master/images/data-science-executive-briefing-v1.png)
 
 - This dataset is of e-commerce website "*Shades N Style*". 
-  "*Shades N Stlye*" is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and     lifestyle products, it aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the         widest range of brands and products on its portal with continous improvement for thier web page. 
+  "*Shades N Style*" is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and     lifestyle products, it aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the         widest range of brands and products on its portal with continuous improvement for their web page. 
  
- - *Shades N Style* has recently released Beta version of their web page to thier valued customer. Idea behind launching Beta version launch was to know user experiance and their willingness to accpetance on converting new page and to know scope of improvement.
+ - *Shades N Style* has recently released Beta version of their web page to their valued customer. Idea behind launching Beta version launch was to know user experience and their willingness to acceptance on converting new page and to know scope of improvement.
  
 ### 3.2 Problem statement :-<a id=section302></a>
 
 - While working on the dataset, need to keep in mind about the objective " 
-  **Help Shades N Style to understand - whether they should impliment new webpage or not or need to wait for some moretime before           implimentation**"
+  **Help Shades N Style to understand - whether they should implement new webpage or not or need to wait for some more time before           implementation**"
  
- - To evalue the objective lets attampt "t-Test" keeping control and test grouping from the data
+ - To evaluate the objective lets attempt "t-Test" keeping control and test grouping from the data
  
 ### Disclaimer: The images are only for illustration purpose. Please don't compare them with our data.
 
